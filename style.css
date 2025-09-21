@@ -89,7 +89,10 @@ body {
 
 .button-container {
     width: 300px;
-    justify-content: center;
+    display: flex; /* Activa Flexbox */
+    flex-direction: column; /* Apila los botones verticalmente */
+    align-items: center; /* Centra los botones horizontalmente */
+    gap: 10px; /* Añade un espacio de 10px entre los botones */
 }
 
 /* Estilos de entrada de texto */
@@ -159,4 +162,14 @@ ul {
 
 .button-draw:hover {
     background-color: var(--color-button-hover);
+}
+
+.button-restart {
+    background-color: var(--color-tertiary);
+    color: var(--color-text);
+    margin-left: 10px; /* Añade un espacio entre los botones */
+}
+
+.button-restart:hover {
+    background-color: #a1a1a1;
 }
